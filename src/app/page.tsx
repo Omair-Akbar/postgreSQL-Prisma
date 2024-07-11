@@ -15,7 +15,6 @@ const Home: NextPage = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [gender, setGender] = useState('');
-  const [users, setUsers] = useState<User[]>([]);
 
   // useEffect(() => {
   //   fetchUsers();
@@ -57,7 +56,7 @@ const Home: NextPage = () => {
           className="mb-2 p-2 w-full bg-darkPurple text-white rounded-md"
         />
         <input
-          type="number"
+          type="text"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           placeholder="Age"
